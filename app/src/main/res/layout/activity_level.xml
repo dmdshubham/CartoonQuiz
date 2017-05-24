@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_level"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg"
+    tools:context="com.karunendu.cartoonquiz.LevelActivity">
+    <GridView
+        android:id="@+id/qns_grid"
+        android:padding="5dp"
+        android:horizontalSpacing="5dp"
+        android:verticalSpacing="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="3"></GridView>
+</RelativeLayout>

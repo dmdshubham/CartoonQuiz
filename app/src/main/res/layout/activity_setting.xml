@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_setting"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg"
+    tools:context="com.karunendu.cartoonquiz.SettingActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="85dp"
+        android:layout_marginEnd="85dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quiz Settings"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:textSize="28sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Sound"
+                android:textColor="#fff"
+                android:gravity="left"
+                android:textSize="25sp"/>
+            <Switch
+                android:id="@+id/sound_switch"
+                android:layout_width="wrap_content"
+                android:checked="true"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="App Theme"
+            android:textColor="#fff"
+            android:gravity="left"
+            android:layout_margin="10dp"
+            android:textSize="25sp"/>
+        <RadioGroup
+            android:id="@+id/rg_theme"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/rb_default"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" Default"
+                android:textSize="25sp"
+                android:textColor="#fff"
+                android:checked="true"
+                android:layout_marginLeft="20dp"/>
+            <RadioButton
+                android:id="@+id/rb_red"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Red"
+                android:textSize="25sp"
+                android:textColor="#f00"
+                android:layout_marginLeft="20dp"/>
+            <RadioButton
+                android:id="@+id/rb_green"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Green"
+                android:textSize="25sp"
+                android:textColor="#0f0"
+                android:layout_marginLeft="20dp"/>
+            <RadioButton
+                android:id="@+id/rb_blue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Blue"
+                android:textSize="25sp"
+                android:textColor="#00f"
+                android:layout_marginLeft="20dp"/>
+        </RadioGroup>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
